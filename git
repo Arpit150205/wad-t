@@ -1,0 +1,1008 @@
+For the practical **“Push your code to GitHub”**, here are the most common **viva questions, theory questions, command questions, interview-style questions, and troubleshooting questions** that examiners usually ask.
+
+---
+
+# GitHub Practical Viva Questions
+
+## Basic Viva Questions
+
+1. What is Git?
+2. What is GitHub?
+3. Difference between Git and GitHub?
+4. Why do we use version control systems?
+5. What is a repository?
+6. What is a local repository?
+7. What is a remote repository?
+8. What is version control?
+9. What are the advantages of Git?
+10. Why is Git distributed?
+11. What is source code management?
+12. What is commit in Git?
+13. What is push?
+14. What is pull?
+15. What is clone?
+16. What is fork?
+17. What is branching?
+18. What is merging?
+19. What is staging area?
+20. What is `.git` folder?
+21. What is Git Bash?
+22. What is origin in Git?
+23. What is HEAD in Git?
+24. What is master/main branch?
+25. Difference between public and private repository?
+26. What is open-source software?
+27. Why do developers use GitHub?
+28. What is collaboration in GitHub?
+29. What is README.md?
+30. What is markdown?
+
+---
+
+# Important Command Questions
+
+## Repository Initialization
+
+### Q1. How to initialize Git repository?
+
+```bash
+git init
+```
+
+---
+
+### Q2. How to check Git status?
+
+```bash
+git status
+```
+
+---
+
+### Q3. How to add files to staging area?
+
+```bash
+git add filename
+```
+
+OR
+
+```bash
+git add .
+```
+
+---
+
+### Q4. How to commit code?
+
+```bash
+git commit -m "First commit"
+```
+
+---
+
+### Q5. How to connect local repo to GitHub?
+
+```bash
+git remote add origin URL
+```
+
+Example:
+
+```bash
+git remote add origin https://github.com/user/repo.git
+```
+
+---
+
+### Q6. How to push code to GitHub?
+
+```bash
+git push -u origin main
+```
+
+---
+
+### Q7. How to clone repository?
+
+```bash
+git clone URL
+```
+
+---
+
+### Q8. How to pull latest changes?
+
+```bash
+git pull origin main
+```
+
+---
+
+### Q9. How to create new branch?
+
+```bash
+git branch branchname
+```
+
+---
+
+### Q10. How to switch branch?
+
+```bash
+git checkout branchname
+```
+
+---
+
+### Q11. How to merge branch?
+
+```bash
+git merge branchname
+```
+
+---
+
+# Theory Questions
+
+## What is Git?
+
+Git is a distributed version control system used to track changes in source code during software development.
+
+---
+
+## What is GitHub?
+
+GitHub is a cloud-based platform that hosts Git repositories and supports collaboration.
+
+---
+
+## Difference Between Git and GitHub
+
+| Git                  | GitHub                 |
+| -------------------- | ---------------------- |
+| Version control tool | Cloud hosting platform |
+| Works locally        | Works online           |
+| Tracks changes       | Stores repositories    |
+
+---
+
+## Advantages of Git
+
+* Fast
+* Distributed
+* Secure
+* Supports branching
+* Easy collaboration
+* Maintains history
+
+---
+
+## What is Version Control?
+
+Version control is a system that records changes to files over time.
+
+---
+
+# Practical Viva Questions
+
+1. Explain steps to push code to GitHub.
+2. Which command initializes repository?
+3. Which command uploads code to GitHub?
+4. Why do we use `git add`?
+5. Difference between `git add` and `git commit`?
+6. Why is commit message important?
+7. What happens after push?
+8. What is remote origin?
+9. What if repository already exists online?
+10. Why do we use `.gitignore`?
+11. What file types are ignored generally?
+12. How do you check remote URL?
+13. Command to see commit history?
+14. How to undo commit?
+15. What is merge conflict?
+16. How to resolve merge conflict?
+17. What happens during clone?
+18. Why use branches?
+19. What is pull request?
+20. What is CI/CD in GitHub?
+
+---
+
+# Code/Command Writing Questions
+
+## Write command to configure username
+
+```bash
+git config --global user.name "Your Name"
+```
+
+---
+
+## Configure email
+
+```bash
+git config --global user.email "abc@gmail.com"
+```
+
+---
+
+## Check configured details
+
+```bash
+git config --list
+```
+
+---
+
+## Remove remote repository
+
+```bash
+git remote remove origin
+```
+
+---
+
+## Check commit history
+
+```bash
+git log
+```
+
+---
+
+## Rename branch to main
+
+```bash
+git branch -M main
+```
+
+---
+
+# Scenario-Based Questions
+
+## Q1. Repository already exists. What will you do?
+
+Clone repository first:
+
+```bash
+git clone URL
+```
+
+---
+
+## Q2. Push rejected due to changes online?
+
+First pull changes:
+
+```bash
+git pull origin main
+```
+
+Then push again.
+
+---
+
+## Q3. Forgot to add file before commit?
+
+```bash
+git add .
+git commit -m "Updated"
+```
+
+---
+
+## Q4. Wrong remote URL added?
+
+```bash
+git remote remove origin
+git remote add origin NEW_URL
+```
+
+---
+
+# Error-Based Viva Questions
+
+## Q1. What is authentication failed error?
+
+Occurs when username/password/token is wrong.
+
+---
+
+## Q2. What is merge conflict?
+
+When two people modify same lines in a file.
+
+---
+
+## Q3. What is “repository not found”?
+
+Wrong repository URL or no access permission.
+
+---
+
+## Q4. What is detached HEAD state?
+
+HEAD points to specific commit instead of branch.
+
+---
+
+# Most Important Commands (Very Frequently Asked)
+
+```bash
+git init
+git status
+git add .
+git commit -m "message"
+git remote add origin URL
+git push -u origin main
+git pull origin main
+git clone URL
+git branch
+git checkout branchname
+git merge branchname
+git log
+```
+
+---
+
+# Full Practical Flow (Very Important)
+
+## Step-by-Step Process
+
+```bash
+mkdir project
+cd project
+git init
+git add .
+git commit -m "First commit"
+git branch -M main
+git remote add origin URL
+git push -u origin main
+```
+
+---
+
+# Short Viva Answers (Exam Ready)
+
+## Why use GitHub?
+
+GitHub is used for storing, managing, and collaborating on code online.
+
+---
+
+## Why use Git?
+
+Git tracks changes and helps developers collaborate efficiently.
+
+---
+
+## What is commit?
+
+A commit saves changes permanently in repository history.
+
+---
+
+## What is push?
+
+Push uploads local repository changes to remote repository.
+
+---
+
+## What is clone?
+
+Clone creates a copy of remote repository on local machine.
+
+---
+
+# Advanced Viva Questions
+
+1. Difference between Git fetch and Git pull?
+2. Explain rebase.
+3. What is cherry-pick?
+4. What is stash?
+5. Explain Git workflow.
+6. What is GitHub Actions?
+7. What is pull request review?
+8. Explain branching strategy.
+9. Difference between centralized and distributed VCS?
+10. What is semantic versioning?
+
+---
+
+# One-Line Definitions
+
+| Term       | Definition                   |
+| ---------- | ---------------------------- |
+| Repository | Storage location for project |
+| Commit     | Snapshot of changes          |
+| Branch     | Separate development line    |
+| Merge      | Combining branches           |
+| Clone      | Copy repository locally      |
+| Push       | Upload code                  |
+| Pull       | Download latest code         |
+| Fork       | Personal copy of repository  |
+
+---
+
+# Most Expected Final Viva Question
+
+## “Explain complete process to push project on GitHub.”
+
+### Answer:
+
+1. Create repository on GitHub.
+2. Open terminal in project folder.
+3. Initialize Git using `git init`.
+4. Add files using `git add .`
+5. Commit changes using `git commit -m "message"`
+6. Connect GitHub repository using `git remote add origin URL`
+7. Push code using `git push -u origin main`
+# GitHub Practical Viva Questions with Answers
+
+---
+
+# 1. What is Git?
+
+Git is a distributed version control system used to track changes in source code during software development.
+
+---
+
+# 2. What is GitHub?
+
+GitHub is a cloud-based platform used to host Git repositories and collaborate on projects.
+
+---
+
+# 3. Difference between Git and GitHub?
+
+| Git                      | GitHub                     |
+| ------------------------ | -------------------------- |
+| Version control software | Online hosting platform    |
+| Works locally            | Works on cloud             |
+| Tracks file changes      | Stores repositories online |
+
+---
+
+# 4. What is Version Control System (VCS)?
+
+A Version Control System manages and tracks changes made to files over time.
+
+---
+
+# 5. Why do we use Git?
+
+* To track code changes
+* To collaborate with teams
+* To maintain project history
+* To recover old versions
+
+---
+
+# 6. What is a Repository?
+
+A repository is a storage location where project files and version history are stored.
+
+---
+
+# 7. What is Local Repository?
+
+Repository stored on your computer.
+
+---
+
+# 8. What is Remote Repository?
+
+Repository stored online on platforms like GitHub.
+
+---
+
+# 9. What is Commit?
+
+A commit saves the current changes permanently in Git history.
+
+---
+
+# 10. What is Push?
+
+Push uploads local repository changes to GitHub.
+
+---
+
+# 11. What is Pull?
+
+Pull downloads latest changes from remote repository to local machine.
+
+---
+
+# 12. What is Clone?
+
+Clone creates a local copy of remote repository.
+
+```bash id="yded9q"
+git clone URL
+```
+
+---
+
+# 13. What is Fork?
+
+Fork creates a personal copy of another user’s repository on GitHub.
+
+---
+
+# 14. What is Branch?
+
+A branch is an independent line of development.
+
+---
+
+# 15. Why do we use Branches?
+
+Branches are used to develop features separately without affecting main code.
+
+---
+
+# 16. What is Merge?
+
+Merge combines changes from one branch into another.
+
+---
+
+# 17. What is Staging Area?
+
+Temporary area where files are prepared before commit.
+
+---
+
+# 18. What is `.git` Folder?
+
+Hidden folder that stores Git tracking information.
+
+---
+
+# 19. What is README.md?
+
+README.md contains project documentation and instructions.
+
+---
+
+# 20. What is Markdown?
+
+Markdown is a lightweight formatting language used in README files.
+
+---
+
+# 21. What is Git Bash?
+
+Git Bash is a terminal application used to run Git commands.
+
+---
+
+# 22. What is Origin in Git?
+
+Origin is the default name of remote repository.
+
+---
+
+# 23. What is HEAD in Git?
+
+HEAD points to the current branch or latest commit.
+
+---
+
+# 24. What is Main/Master Branch?
+
+Main branch is the default primary branch of repository.
+
+---
+
+# 25. Difference Between Public and Private Repository?
+
+| Public Repo         | Private Repo                     |
+| ------------------- | -------------------------------- |
+| Visible to everyone | Visible only to authorized users |
+
+---
+
+# 26. What is Open Source Software?
+
+Software whose source code is freely available for modification and distribution.
+
+---
+
+# 27. What is Collaboration in GitHub?
+
+Multiple developers working together on same project using GitHub.
+
+---
+
+# 28. What is Pull Request?
+
+A pull request asks repository owner to merge your changes into main branch.
+
+---
+
+# 29. What is Merge Conflict?
+
+Occurs when two users modify same part of file differently.
+
+---
+
+# 30. How to Resolve Merge Conflict?
+
+* Open conflicted file
+* Edit conflicts manually
+* Save file
+* Commit changes
+
+---
+
+# 31. What is `.gitignore`?
+
+`.gitignore` specifies files/folders Git should ignore.
+
+Example:
+
+```bash id="j7gkm7"
+node_modules/
+*.log
+```
+
+---
+
+# 32. Why use `.gitignore`?
+
+To avoid uploading unnecessary or sensitive files.
+
+---
+
+# 33. What is Git Workflow?
+
+Process of:
+
+* Add
+* Commit
+* Push
+* Pull
+* Merge
+
+---
+
+# 34. What is GitHub Actions?
+
+GitHub feature for automation and CI/CD.
+
+---
+
+# 35. What is CI/CD?
+
+CI/CD automates building, testing, and deployment of applications.
+
+---
+
+# 36. What is Distributed Version Control?
+
+Every developer has full repository copy including history.
+
+---
+
+# 37. Difference Between Centralized and Distributed VCS?
+
+| Centralized                  | Distributed              |
+| ---------------------------- | ------------------------ |
+| Single central server        | Every user has full copy |
+| Needs constant server access | Can work offline         |
+
+---
+
+# 38. What is Git Fetch?
+
+Fetch downloads latest changes but does not merge them.
+
+---
+
+# 39. Difference Between Fetch and Pull?
+
+| Fetch                  | Pull                       |
+| ---------------------- | -------------------------- |
+| Downloads changes only | Downloads + merges changes |
+
+---
+
+# 40. What is Rebase?
+
+Rebase moves branch commits onto another base commit for cleaner history.
+
+---
+
+# 41. What is Git Stash?
+
+Temporarily saves uncommitted changes.
+
+```bash id="e8y5ch"
+git stash
+```
+
+---
+
+# 42. What is Cherry-Pick?
+
+Cherry-pick applies specific commit from one branch to another.
+
+---
+
+# 43. What is Git Log?
+
+Shows commit history.
+
+```bash id="6w5fwp"
+git log
+```
+
+---
+
+# 44. What is Authentication Failed Error?
+
+Occurs due to wrong credentials or invalid access token.
+
+---
+
+# 45. What is Repository Not Found Error?
+
+Occurs due to:
+
+* Wrong URL
+* No repository access
+* Repository deleted
+
+---
+
+# 46. What is Detached HEAD State?
+
+HEAD points to commit instead of branch.
+
+---
+
+# 47. Explain Full Process to Push Code to GitHub
+
+### Steps:
+
+1. Create GitHub repository
+2. Open terminal
+3. Initialize Git
+4. Add files
+5. Commit files
+6. Connect remote repo
+7. Push code
+
+### Commands:
+
+```bash id="p26n6x"
+git init
+git add .
+git commit -m "First Commit"
+git branch -M main
+git remote add origin URL
+git push -u origin main
+```
+
+---
+
+# 48. Command to Initialize Git?
+
+```bash id="7p7x6o"
+git init
+```
+
+---
+
+# 49. Command to Add Files?
+
+```bash id="bwif2g"
+git add .
+```
+
+---
+
+# 50. Command to Commit Changes?
+
+```bash id="80vhrl"
+git commit -m "message"
+```
+
+---
+
+# 51. Command to Push Code?
+
+```bash id="oz11lr"
+git push -u origin main
+```
+
+---
+
+# 52. Command to Check Status?
+
+```bash id="u3x21m"
+git status
+```
+
+---
+
+# 53. Command to Create Branch?
+
+```bash id="t1jc2g"
+git branch newbranch
+```
+
+---
+
+# 54. Command to Switch Branch?
+
+```bash id="v7gmz8"
+git checkout newbranch
+```
+
+---
+
+# 55. Command to Merge Branch?
+
+```bash id="8b2rcr"
+git merge newbranch
+```
+
+---
+
+# 56. Command to Remove Remote?
+
+```bash id="5rsl4w"
+git remote remove origin
+```
+
+---
+
+# 57. Command to Rename Branch to Main?
+
+```bash id="f5cjlwm"
+git branch -M main
+```
+
+---
+
+# 58. How to Check Remote URL?
+
+```bash id="otbbmk"
+git remote -v
+```
+
+---
+
+# 59. How to Configure Username?
+
+```bash id="4h0bsl"
+git config --global user.name "Your Name"
+```
+
+---
+
+# 60. How to Configure Email?
+
+```bash id="md9prr"
+git config --global user.email "abc@gmail.com"
+```
+
+---
+
+# 61. How to See Configurations?
+
+```bash id="b7nyv8"
+git config --list
+```
+
+---
+
+# 62. Why Commit Message Important?
+
+It helps identify what changes were made.
+
+---
+
+# 63. What Happens After Push?
+
+Code uploads from local machine to GitHub repository.
+
+---
+
+# 64. What Happens During Clone?
+
+Entire repository with history downloads to local system.
+
+---
+
+# 65. Why Git is Popular?
+
+* Fast
+* Open-source
+* Easy collaboration
+* Distributed
+* Powerful branching
+
+---
+
+# 66. Advantages of GitHub
+
+* Online backup
+* Collaboration
+* Open-source contribution
+* Project management
+* CI/CD support
+
+---
+
+# 67. What is Semantic Versioning?
+
+Version numbering format:
+
+```text id="wfx7gr"
+MAJOR.MINOR.PATCH
+```
+
+Example:
+
+```text id="r9rktm"
+1.0.0
+```
+
+---
+
+# 68. Explain Git Add vs Git Commit
+
+| Git Add                     | Git Commit                |
+| --------------------------- | ------------------------- |
+| Moves files to staging area | Saves changes permanently |
+
+---
+
+# 69. Explain Git Push vs Git Pull
+
+| Push           | Pull             |
+| -------------- | ---------------- |
+| Upload changes | Download changes |
+
+---
+
+# 70. Most Important Viva Answer
+
+## Explain Entire Practical
+
+### Answer:
+
+First, I created a repository on GitHub. Then I opened terminal in project folder and initialized Git using:
+
+```bash id="lbsl4f"
+git init
+```
+
+Then I added files:
+
+```bash id="70d3b0"
+git add .
+```
+
+Committed changes:
+
+```bash id="1d24k5"
+git commit -m "First Commit"
+```
+
+Connected remote repository:
+
+```bash id="jlbjzt"
+git remote add origin URL
+```
+
+Finally pushed code to GitHub:
+
+```bash id="gqvwf2"
+git push -u origin main
+```
