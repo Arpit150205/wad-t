@@ -1,0 +1,483 @@
+# Viva Questions + Answers
+
+## Practical: Create Simple Mobile Website using jQuery Mobile
+
+---
+
+# 1. Basic Viva Questions
+
+### Q1. What is jQuery Mobile?
+
+jQuery Mobile is a touch-optimized web framework used to create responsive mobile websites and applications using HTML, CSS, and JavaScript.
+
+---
+
+### Q2. Why do we use jQuery Mobile?
+
+* To create mobile-friendly websites
+* To support multiple devices
+* To provide responsive UI components
+* Faster mobile development
+
+---
+
+### Q3. What technologies are required for jQuery Mobile?
+
+* HTML
+* CSS
+* JavaScript
+* jQuery library
+* jQuery Mobile library
+
+---
+
+### Q4. What is a responsive website?
+
+A responsive website automatically adjusts its layout according to screen size and device.
+
+---
+
+### Q5. What are the advantages of jQuery Mobile?
+
+* Easy to use
+* Responsive design
+* Cross-platform support
+* Touch-friendly UI
+* Less coding
+
+---
+
+### Q6. What is CDN?
+
+CDN (Content Delivery Network) provides online hosted libraries like jQuery and Bootstrap.
+
+---
+
+### Q7. Why do we include jQuery before jQuery Mobile?
+
+Because jQuery Mobile depends on jQuery library.
+
+---
+
+### Q8. What is the purpose of viewport meta tag?
+
+It makes the website responsive on mobile devices.
+
+Example:
+
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1">
+```
+
+---
+
+# 2. Structure-Based Questions
+
+### Q9. What is `data-role="page"`?
+
+It defines a page container in jQuery Mobile.
+
+Example:
+
+```html
+<div data-role="page">
+```
+
+---
+
+### Q10. What is `data-role="header"`?
+
+Creates header section.
+
+---
+
+### Q11. What is `data-role="content"`?
+
+Defines main content area.
+
+---
+
+### Q12. What is `data-role="footer"`?
+
+Creates footer section.
+
+---
+
+### Q13. What is `data-role="button"`?
+
+Creates mobile-styled button.
+
+---
+
+### Q14. What is `data-role="navbar"`?
+
+Used to create navigation menu.
+
+---
+
+### Q15. What is `data-role="listview"`?
+
+Creates mobile-styled lists.
+
+---
+
+# 3. Coding Questions
+
+### Q16. Write basic structure of jQuery Mobile page.
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<title>Mobile Website</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet"
+href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+</head>
+
+<body>
+
+<div data-role="page">
+
+<div data-role="header">
+<h1>My Website</h1>
+</div>
+
+<div role="main" class="ui-content">
+<p>Hello World</p>
+</div>
+
+<div data-role="footer">
+<h4>Footer</h4>
+</div>
+
+</div>
+
+</body>
+</html>
+```
+
+---
+
+### Q17. How to create a button?
+
+```html
+<a href="#" data-role="button">Click Me</a>
+```
+
+---
+
+### Q18. How to create a listview?
+
+```html
+<ul data-role="listview">
+<li><a href="#">Home</a></li>
+<li><a href="#">About</a></li>
+</ul>
+```
+
+---
+
+### Q19. How to create multiple pages in one HTML file?
+
+```html
+<div data-role="page" id="home">
+</div>
+
+<div data-role="page" id="about">
+</div>
+```
+
+---
+
+### Q20. How to navigate between pages?
+
+```html
+<a href="#about">Go to About Page</a>
+```
+
+---
+
+# 4. Theory Questions
+
+### Q21. Difference between jQuery and jQuery Mobile?
+
+| jQuery                    | jQuery Mobile       |
+| ------------------------- | ------------------- |
+| JavaScript library        | Mobile UI framework |
+| Used for DOM manipulation | Used for mobile UI  |
+| General purpose           | Mobile-specific     |
+
+---
+
+### Q22. What is touch optimization?
+
+UI designed specially for finger touch interaction.
+
+---
+
+### Q23. What is AJAX navigation in jQuery Mobile?
+
+Pages load dynamically without full refresh.
+
+---
+
+### Q24. What is theme in jQuery Mobile?
+
+Themes change colors and appearance of UI components.
+
+---
+
+### Q25. What is mobile-first design?
+
+Designing website for mobile devices first, then desktop.
+
+---
+
+# 5. Practical Exam Questions
+
+### Q26. How do you run jQuery Mobile project in VS Code?
+
+Steps:
+
+1. Create HTML file
+2. Paste code
+3. Save file
+4. Install Live Server extension
+5. Right click → Open with Live Server
+
+---
+
+### Q27. Why internet connection is required sometimes?
+
+Because CDN links are loaded online.
+
+---
+
+### Q28. How to work offline?
+
+Download:
+
+* jQuery JS
+* jQuery Mobile JS
+* CSS files locally
+
+---
+
+### Q29. Which browsers support jQuery Mobile?
+
+* Chrome
+* Firefox
+* Edge
+* Safari
+* Mobile browsers
+
+---
+
+### Q30. What is Live Server?
+
+VS Code extension used to run website locally.
+
+---
+
+# 6. Advanced Viva Questions
+
+### Q31. What is single-page template in jQuery Mobile?
+
+Multiple pages stored in one HTML file.
+
+---
+
+### Q32. What is transition effect?
+
+Animation between page changes.
+
+Example:
+
+```html
+<a href="#page2" data-transition="slide">
+```
+
+---
+
+### Q33. Types of transitions?
+
+* slide
+* fade
+* pop
+* flip
+
+---
+
+### Q34. How to create collapsible content?
+
+```html
+<div data-role="collapsible">
+<h3>Click Me</h3>
+<p>Hidden Content</p>
+</div>
+```
+
+---
+
+### Q35. How to create form in jQuery Mobile?
+
+```html
+<form>
+<label>Name:</label>
+<input type="text">
+
+<label>Password:</label>
+<input type="password">
+</form>
+```
+
+---
+
+# 7. Output-Based Questions
+
+### Q36. Why website looks different on mobile?
+
+Responsive CSS automatically adapts layout.
+
+---
+
+### Q37. What happens if jQuery file is missing?
+
+Website functionality breaks.
+
+---
+
+### Q38. What happens if CSS file is missing?
+
+Website appears plain without styling.
+
+---
+
+### Q39. Why use external libraries?
+
+To reduce development time.
+
+---
+
+### Q40. What is the extension of webpage files?
+
+`.html`
+
+---
+
+# 8. Frequently Asked Lab Questions
+
+### Q41. Explain your project flow.
+
+1. Added CDN links
+2. Created page container
+3. Added header/content/footer
+4. Added buttons and navigation
+5. Ran using Live Server
+
+---
+
+### Q42. Which tag is mandatory in HTML5?
+
+```html
+<!DOCTYPE html>
+```
+
+---
+
+### Q43. Why use `role="main"`?
+
+Defines main content area for accessibility.
+
+---
+
+### Q44. Can jQuery Mobile work with Android?
+
+Yes, through browser or hybrid apps.
+
+---
+
+### Q45. What is hybrid mobile app?
+
+App developed using web technologies wrapped inside native container.
+
+---
+
+# 9. Important Code Snippets
+
+## Button
+
+```html
+<a href="#" data-role="button">Button</a>
+```
+
+---
+
+## Navbar
+
+```html
+<div data-role="navbar">
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">About</a></li>
+</ul>
+</div>
+```
+
+---
+
+## Listview
+
+```html
+<ul data-role="listview">
+<li>Item 1</li>
+<li>Item 2</li>
+</ul>
+```
+
+---
+
+## Collapsible
+
+```html
+<div data-role="collapsible">
+<h3>Title</h3>
+<p>Content</p>
+</div>
+```
+
+---
+
+## Form
+
+```html
+<form>
+<input type="text" placeholder="Enter Name">
+<input type="submit">
+</form>
+```
+
+---
+
+# 10. Most Important Viva Questions (Exam Shortcut)
+
+These are most commonly asked:
+
+1. What is jQuery Mobile?
+2. Difference between jQuery and jQuery Mobile?
+3. Why viewport tag is used?
+4. What is `data-role="page"`?
+5. What is responsive design?
+6. What is CDN?
+7. Why include jQuery first?
+8. How to run project?
+9. What is listview/navbar/button?
+10. Advantages of jQuery Mobile?
