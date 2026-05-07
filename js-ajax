@@ -1,0 +1,593 @@
+# Viva Questions & Answers
+
+## Practical: JavaScript Program to Get User Registration Data and Store in Local Storage using AJAX
+
+---
+
+# 1. Basic Viva Questions
+
+### Q1. What is JavaScript?
+
+JavaScript is a client-side scripting language used to make web pages interactive.
+
+---
+
+### Q2. What is Local Storage?
+
+Local Storage is a web storage feature that stores data in the browser permanently until manually deleted.
+
+---
+
+### Q3. What is AJAX?
+
+AJAX stands for Asynchronous JavaScript and XML.
+It allows data exchange with the server without reloading the webpage.
+
+---
+
+### Q4. What is the full form of AJAX?
+
+Asynchronous JavaScript And XML.
+
+---
+
+### Q5. Why do we use AJAX?
+
+* To send/receive data asynchronously
+* To avoid page reload
+* To improve user experience
+
+---
+
+### Q6. What is JSON?
+
+JSON (JavaScript Object Notation) is a lightweight data format used to store and transfer data.
+
+Example:
+
+```json
+{
+  "name": "Arpit",
+  "email": "arpit@gmail.com"
+}
+```
+
+---
+
+### Q7. Difference between sessionStorage and localStorage?
+
+| localStorage                     | sessionStorage               |
+| -------------------------------- | ---------------------------- |
+| Permanent storage                | Temporary storage            |
+| Data remains after browser close | Data deleted after tab close |
+| Capacity around 5MB              | Capacity around 5MB          |
+
+---
+
+### Q8. What is DOM?
+
+DOM (Document Object Model) represents HTML elements as objects.
+
+---
+
+### Q9. What is event handling in JavaScript?
+
+Responding to user actions like click, submit, keypress etc.
+
+---
+
+### Q10. What is the use of preventDefault()?
+
+It prevents default browser behavior like form submission reload.
+
+Example:
+
+```js
+event.preventDefault();
+```
+
+---
+
+# 2. Questions Related to Local Storage
+
+### Q11. Syntax to store data in localStorage?
+
+```js
+localStorage.setItem("key", value);
+```
+
+---
+
+### Q12. Syntax to get data from localStorage?
+
+```js
+localStorage.getItem("key");
+```
+
+---
+
+### Q13. Syntax to remove data from localStorage?
+
+```js
+localStorage.removeItem("key");
+```
+
+---
+
+### Q14. How to clear localStorage?
+
+```js
+localStorage.clear();
+```
+
+---
+
+### Q15. Can localStorage store objects directly?
+
+No.
+
+We convert objects using:
+
+```js
+JSON.stringify()
+```
+
+And retrieve using:
+
+```js
+JSON.parse()
+```
+
+---
+
+### Q16. Why use JSON.stringify()?
+
+To convert JavaScript object into string format for storage.
+
+---
+
+### Q17. Why use JSON.parse()?
+
+To convert stored string back into object.
+
+---
+
+# 3. AJAX Related Viva Questions
+
+### Q18. What are the advantages of AJAX?
+
+* Faster web applications
+* No page reload
+* Better user experience
+* Reduced server load
+
+---
+
+### Q19. What object is used in AJAX traditionally?
+
+```js
+XMLHttpRequest
+```
+
+---
+
+### Q20. Modern alternative to XMLHttpRequest?
+
+```js
+fetch()
+```
+
+---
+
+### Q21. Difference between synchronous and asynchronous?
+
+| Synchronous           | Asynchronous           |
+| --------------------- | ---------------------- |
+| Executes line by line | Executes independently |
+| Blocks execution      | Non-blocking           |
+
+---
+
+### Q22. What is fetch()?
+
+A modern JavaScript API used to make HTTP requests.
+
+Example:
+
+```js
+fetch(url)
+```
+
+---
+
+### Q23. Which HTTP methods are commonly used in AJAX?
+
+* GET
+* POST
+* PUT
+* DELETE
+
+---
+
+### Q24. Which method is used for registration form submission?
+
+Usually POST.
+
+---
+
+### Q25. What is API?
+
+API (Application Programming Interface) allows communication between applications.
+
+---
+
+# 4. Form Related Viva Questions
+
+### Q26. Which HTML tag is used for forms?
+
+```html
+<form>
+```
+
+---
+
+### Q27. Which input types are commonly used in registration forms?
+
+* text
+* email
+* password
+* number
+* radio
+* checkbox
+
+---
+
+### Q28. How to access form values in JavaScript?
+
+```js
+document.getElementById("name").value
+```
+
+---
+
+### Q29. How to validate empty fields?
+
+```js
+if(name === "")
+```
+
+---
+
+### Q30. Why is form validation important?
+
+* Prevent invalid data
+* Improve security
+* Improve data accuracy
+
+---
+
+# 5. Important Code Questions
+
+---
+
+## Q31. Write code to store registration data in localStorage.
+
+```js
+let user = {
+  name: "Arpit",
+  email: "arpit@gmail.com"
+};
+
+localStorage.setItem("user", JSON.stringify(user));
+```
+
+---
+
+## Q32. Write code to retrieve data from localStorage.
+
+```js
+let data = JSON.parse(localStorage.getItem("user"));
+console.log(data);
+```
+
+---
+
+## Q33. Write AJAX fetch GET request.
+
+```js
+fetch("https://jsonplaceholder.typicode.com/users")
+.then(response => response.json())
+.then(data => console.log(data));
+```
+
+---
+
+## Q34. Write AJAX POST request.
+
+```js
+fetch("https://jsonplaceholder.typicode.com/posts", {
+    method: "POST",
+    headers: {
+        "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+        name: "Arpit"
+    })
+})
+.then(response => response.json())
+.then(data => console.log(data));
+```
+
+---
+
+## Q35. Write code to prevent form refresh.
+
+```js
+form.addEventListener("submit", function(event){
+    event.preventDefault();
+});
+```
+
+---
+
+# 6. Advanced Viva Questions
+
+### Q36. Is localStorage secure?
+
+No. Sensitive data like passwords should not be stored.
+
+---
+
+### Q37. What is browser storage limit?
+
+Usually around 5MB.
+
+---
+
+### Q38. Can localStorage work offline?
+
+Yes.
+
+---
+
+### Q39. Difference between cookies and localStorage?
+
+| Cookies          | localStorage           |
+| ---------------- | ---------------------- |
+| Sent to server   | Not sent automatically |
+| Small storage    | Larger storage         |
+| Expiry available | No expiry              |
+
+---
+
+### Q40. What happens if JavaScript is disabled?
+
+AJAX and localStorage will not work.
+
+---
+
+### Q41. What is asynchronous programming?
+
+Tasks execute independently without blocking other operations.
+
+---
+
+### Q42. What is callback function?
+
+Function passed as argument to another function.
+
+---
+
+### Q43. What is promise in JavaScript?
+
+Object representing future completion/failure of async operation.
+
+---
+
+### Q44. What are states of Promise?
+
+* Pending
+* Fulfilled
+* Rejected
+
+---
+
+### Q45. What is async/await?
+
+Cleaner syntax for handling promises.
+
+Example:
+
+```js
+async function getData(){
+   let response = await fetch(url);
+}
+```
+
+---
+
+# 7. Output-Based Questions
+
+### Q46. What will JSON.stringify() return?
+
+A JSON string.
+
+---
+
+### Q47. What happens if key does not exist in localStorage?
+
+Returns:
+
+```js
+null
+```
+
+---
+
+### Q48. Can we store arrays in localStorage?
+
+Yes using:
+
+```js
+JSON.stringify(array)
+```
+
+---
+
+### Q49. Which browser supports AJAX?
+
+Almost all modern browsers.
+
+---
+
+### Q50. What is client-side validation?
+
+Validation done in browser before sending data to server.
+
+---
+
+# 8. Most Asked Practical Viva Questions
+
+### Q51. Explain your practical flow.
+
+1. User fills registration form
+2. JavaScript captures data
+3. Validation performed
+4. AJAX request sent
+5. Data stored in localStorage
+6. Success message displayed
+
+---
+
+### Q52. Why did you use localStorage?
+
+To store user data permanently in browser.
+
+---
+
+### Q53. Why use AJAX in this practical?
+
+To submit data without reloading webpage.
+
+---
+
+### Q54. Why convert object into JSON string?
+
+Because localStorage stores only strings.
+
+---
+
+### Q55. How can you check stored localStorage data?
+
+Browser → Inspect → Application → Local Storage.
+
+---
+
+# 9. Frequently Asked Error Questions
+
+### Q56. Why data is not storing in localStorage?
+
+Possible reasons:
+
+* Wrong key
+* Missing JSON.stringify()
+* JavaScript error
+
+---
+
+### Q57. Why fetch request fails?
+
+* Internet issue
+* Wrong API URL
+* CORS issue
+
+---
+
+### Q58. What is CORS?
+
+Cross-Origin Resource Sharing security policy.
+
+---
+
+# 10. Short One-Line Viva Questions
+
+| Question                         | Answer           |
+| -------------------------------- | ---------------- |
+| Storage object in browser?       | localStorage     |
+| Method to store data?            | setItem()        |
+| Method to get data?              | getItem()        |
+| Method to remove data?           | removeItem()     |
+| AJAX works asynchronously?       | Yes              |
+| AJAX avoids reload?              | Yes              |
+| Data format mostly used?         | JSON             |
+| API request method for insert?   | POST             |
+| HTML tag for form?               | form             |
+| JS function for JSON conversion? | JSON.stringify() |
+
+---
+
+# 11. Full Simple Registration Program
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+</head>
+<body>
+
+<h2>User Registration</h2>
+
+<form id="registerForm">
+    Name:
+    <input type="text" id="name"><br><br>
+
+    Email:
+    <input type="email" id="email"><br><br>
+
+    Password:
+    <input type="password" id="password"><br><br>
+
+    <button type="submit">Register</button>
+</form>
+
+<script>
+
+document.getElementById("registerForm").addEventListener("submit", function(event){
+
+    event.preventDefault();
+
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let password = document.getElementById("password").value;
+
+    let user = {
+        name: name,
+        email: email,
+        password: password
+    };
+
+    // Store in localStorage
+    localStorage.setItem("user", JSON.stringify(user));
+
+    // AJAX Example
+    fetch("https://jsonplaceholder.typicode.com/posts", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(user)
+    })
+    .then(response => response.json())
+    .then(data => {
+        alert("Registration Successful");
+        console.log(data);
+    });
+
+});
+
+</script>
+
+</body>
+</html>
+```
