@@ -1,0 +1,446 @@
+# Responsive Web Page using HTML, CSS, Bootstrap — Viva Questions & Answers
+
+## 1. Basic HTML Questions
+
+### Q1. What is HTML?
+
+HTML (HyperText Markup Language) is used to create the structure of web pages.
+
+### Q2. What is the use of `<!DOCTYPE html>`?
+
+It tells the browser that the document is an HTML5 document.
+
+### Q3. Difference between HTML and CSS?
+
+* HTML → structure/content
+* CSS → styling/design
+
+### Q4. What are semantic tags?
+
+Tags with meaning:
+
+* `<header>`
+* `<footer>`
+* `<section>`
+* `<article>`
+* `<nav>`
+
+### Q5. What is the use of `<meta viewport>`?
+
+Makes the webpage responsive on mobile devices.
+
+Example:
+
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+```
+
+---
+
+# 2. CSS Viva Questions
+
+### Q6. What is CSS?
+
+CSS (Cascading Style Sheets) is used to style HTML elements.
+
+### Q7. Types of CSS?
+
+1. Inline CSS
+2. Internal CSS
+3. External CSS
+
+### Q8. Difference between class and id?
+
+* `class` → reusable
+* `id` → unique
+
+### Q9. What is Flexbox?
+
+CSS layout system for alignment and spacing.
+
+### Q10. What is Media Query?
+
+Used for responsive design based on screen size.
+
+Example:
+
+```css
+@media(max-width:768px){
+  body{
+    background:red;
+  }
+}
+```
+
+### Q11. What is responsive web design?
+
+Design that adapts to different screen sizes.
+
+### Q12. What is padding and margin?
+
+* Padding → space inside border
+* Margin → space outside border
+
+---
+
+# 3. Bootstrap Viva Questions
+
+### Q13. What is Bootstrap?
+
+Bootstrap is a CSS framework used for responsive and faster web development.
+
+### Q14. Advantages of Bootstrap?
+
+* Responsive design
+* Predefined components
+* Faster development
+* Mobile-first approach
+
+### Q15. What is Bootstrap Grid System?
+
+12-column responsive layout system.
+
+### Q16. Explain Bootstrap container classes.
+
+* `.container` → fixed width
+* `.container-fluid` → full width
+
+### Q17. What are Bootstrap breakpoints?
+
+Responsive screen sizes:
+
+* sm
+* md
+* lg
+* xl
+* xxl
+
+### Q18. Difference between `col-6` and `col-md-6`?
+
+* `col-6` → applies to all screens
+* `col-md-6` → applies from medium screens onwards
+
+### Q19. What is the use of Bootstrap navbar?
+
+Creates responsive navigation menu.
+
+### Q20. What is Bootstrap card?
+
+Flexible content container.
+
+### Q21. What is Bootstrap CDN?
+
+Online link to include Bootstrap without downloading files.
+
+Example:
+
+```html
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+```
+
+---
+
+# 4. Responsive Design Questions
+
+### Q22. What makes a website responsive?
+
+* Flexible grid
+* Media queries
+* Responsive images
+* Bootstrap classes
+
+### Q23. Difference between adaptive and responsive design?
+
+* Adaptive → fixed layouts
+* Responsive → fluid layouts
+
+### Q24. What is mobile-first design?
+
+Designing for mobile devices first.
+
+### Q25. Which Bootstrap class hides elements?
+
+* `d-none`
+* `d-md-block`
+
+---
+
+# 5. Bootstrap Classes Questions
+
+### Q26. What is the use of `text-center`?
+
+Centers text.
+
+### Q27. What is `mt-3`?
+
+Margin-top spacing class.
+
+### Q28. What is `p-4`?
+
+Padding spacing class.
+
+### Q29. What is `img-fluid`?
+
+Makes image responsive.
+
+### Q30. What is `btn btn-primary`?
+
+Bootstrap button styling classes.
+
+---
+
+# 6. Practical Coding Questions
+
+## Q31. Write Bootstrap CDN code.
+
+```html
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+```
+
+---
+
+## Q32. Create responsive two-column layout.
+
+```html
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 bg-primary text-white">Column 1</div>
+    <div class="col-md-6 bg-danger text-white">Column 2</div>
+  </div>
+</div>
+```
+
+---
+
+## Q33. Create Bootstrap button.
+
+```html
+<button class="btn btn-success">Click</button>
+```
+
+---
+
+## Q34. Create responsive image.
+
+```html
+<img src="image.jpg" class="img-fluid">
+```
+
+---
+
+## Q35. Create Bootstrap navbar.
+
+```html
+<nav class="navbar navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">MySite</a>
+  </div>
+</nav>
+```
+
+---
+
+## Q36. Create Bootstrap card.
+
+```html
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Card Title</h5>
+    <p class="card-text">Sample Text</p>
+  </div>
+</div>
+```
+
+---
+
+# 7. Advanced Viva Questions
+
+### Q37. What is CDN?
+
+Content Delivery Network used to load libraries faster.
+
+### Q38. Why use Bootstrap instead of normal CSS?
+
+Bootstrap provides ready-made responsive components.
+
+### Q39. What is the difference between Bootstrap 4 and 5?
+
+Bootstrap 5 removed jQuery dependency.
+
+### Q40. What is utility class in Bootstrap?
+
+Small helper classes like:
+
+* `text-center`
+* `bg-dark`
+* `mt-3`
+
+---
+
+# 8. Output/Program Related Questions
+
+### Q41. How did you make the webpage responsive?
+
+Using:
+
+* Bootstrap grid
+* Media queries
+* Responsive classes
+
+### Q42. Which Bootstrap components did you use?
+
+Possible answer:
+
+* Navbar
+* Card
+* Grid system
+* Buttons
+
+### Q43. Why did you use Bootstrap?
+
+To reduce coding time and make responsive UI quickly.
+
+### Q44. What happens without viewport meta tag?
+
+Website will not scale properly on mobile devices.
+
+---
+
+# 9. Common Examiner Questions
+
+### Q45. Difference between `container` and `container-fluid`?
+
+* `container` → fixed responsive width
+* `container-fluid` → full width
+
+### Q46. What is a framework?
+
+Pre-written code library that simplifies development.
+
+### Q47. Can Bootstrap work without internet?
+
+Yes, if Bootstrap files are downloaded locally.
+
+### Q48. Which languages are used in Bootstrap?
+
+* HTML
+* CSS
+* JavaScript
+
+### Q49. What is the role of JavaScript in Bootstrap?
+
+Used for:
+
+* Navbar toggle
+* Modals
+* Carousel
+* Dropdowns
+
+---
+
+# 10. Important Theory Questions
+
+### Q50. Features of Bootstrap
+
+* Mobile-first
+* Responsive grid
+* Easy customization
+* Browser compatibility
+
+### Q51. What are Bootstrap utilities?
+
+Helper classes for:
+
+* spacing
+* alignment
+* display
+* colors
+
+### Q52. What is Bootstrap row class?
+
+Used to create horizontal groups of columns.
+
+---
+
+# 11. Frequently Asked Coding Modifications
+
+## Add background color
+
+```html
+<div class="bg-primary text-white">
+```
+
+## Add spacing
+
+```html
+<div class="mt-5 p-3">
+```
+
+## Add responsive columns
+
+```html
+<div class="col-sm-12 col-md-6 col-lg-4">
+```
+
+---
+
+# 12. One-Line Quick Viva Answers
+
+| Question                   | Answer                  |
+| -------------------------- | ----------------------- |
+| What is Bootstrap?         | CSS framework           |
+| What is responsive design? | Adapts to screen size   |
+| Grid columns in Bootstrap? | 12                      |
+| Responsive image class?    | `img-fluid`             |
+| Center text class?         | `text-center`           |
+| Primary Bootstrap file?    | bootstrap.min.css       |
+| Mobile-first meaning?      | Design for mobile first |
+
+---
+
+# 13. Full Mini Program (Most Asked)
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Responsive Page</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+<nav class="navbar navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">My Website</a>
+  </div>
+</nav>
+
+<div class="container mt-4">
+  <div class="row">
+
+    <div class="col-md-6">
+      <div class="card p-3">
+        <h3>Column 1</h3>
+        <p>Responsive design using Bootstrap.</p>
+        <button class="btn btn-primary">Click</button>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="card p-3">
+        <h3>Column 2</h3>
+        <p>Works on mobile and desktop.</p>
+        <button class="btn btn-success">Submit</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
+```
