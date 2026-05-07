@@ -1,0 +1,649 @@
+# Angular Application with Four Components — Viva Questions
+
+---
+
+# BASIC ANGULAR QUESTIONS
+
+## 1. What is Angular?
+
+Angular is a frontend framework used to build Single Page Applications (SPA).
+
+Developed by [Google Angular](https://angular.dev?utm_source=chatgpt.com)
+
+---
+
+## 2. What is SPA?
+
+SPA means Single Page Application.
+
+Only one page loads and content changes dynamically.
+
+---
+
+## 3. What language does Angular use?
+
+TypeScript.
+
+---
+
+## 4. What is TypeScript?
+
+TypeScript is a superset of JavaScript.
+
+Adds:
+
+* Types
+* Classes
+* Interfaces
+
+---
+
+## 5. What is Angular CLI?
+
+CLI = Command Line Interface.
+
+Used to:
+
+* Create project
+* Create components
+* Run application
+
+---
+
+## 6. Command to install Angular CLI?
+
+```bash
+npm install -g @angular/cli
+```
+
+---
+
+## 7. Command to create Angular project?
+
+```bash
+ng new myapp
+```
+
+---
+
+## 8. Command to run Angular project?
+
+```bash
+ng serve
+```
+
+---
+
+## 9. Default Angular port?
+
+```text
+4200
+```
+
+---
+
+## 10. Command to create component?
+
+```bash
+ng generate component home
+```
+
+Shortcut:
+
+```bash
+ng g c home
+```
+
+---
+
+# COMPONENT QUESTIONS
+
+## 11. What is Component?
+
+A reusable UI block in Angular.
+
+Example:
+
+* Header
+* Footer
+* Login form
+
+---
+
+## 12. What files are created with component?
+
+Example:
+
+```text
+home.component.ts
+home.component.html
+home.component.css
+home.component.spec.ts
+```
+
+---
+
+## 13. Purpose of `.ts` file?
+
+Contains logic.
+
+---
+
+## 14. Purpose of `.html` file?
+
+Contains UI.
+
+---
+
+## 15. Purpose of `.css` file?
+
+Styling.
+
+---
+
+## 16. Purpose of `.spec.ts` file?
+
+Testing.
+
+---
+
+## 17. What is selector?
+
+Custom HTML tag for component.
+
+Example:
+
+```typescript
+selector: 'app-home'
+```
+
+Used as:
+
+```html
+<app-home></app-home>
+```
+
+---
+
+## 18. What is root component?
+
+Main component of Angular app.
+
+Usually:
+
+```text
+AppComponent
+```
+
+---
+
+## 19. Which file loads first in Angular?
+
+```text
+main.ts
+```
+
+---
+
+## 20. What is bootstrap in Angular?
+
+Starting component of application.
+
+Example:
+
+```typescript
+bootstrapApplication(App)
+```
+
+---
+
+# FILE STRUCTURE QUESTIONS
+
+## 21. Important folders in Angular?
+
+| Folder       | Purpose            |
+| ------------ | ------------------ |
+| src          | Source code        |
+| app          | Components         |
+| assets       | Images/files       |
+| node_modules | Installed packages |
+
+---
+
+## 22. What is `package.json`?
+
+Contains:
+
+* dependencies
+* scripts
+* project information
+
+---
+
+## 23. What is `angular.json`?
+
+Angular configuration file.
+
+---
+
+## 24. What is `node_modules`?
+
+Stores installed npm packages.
+
+---
+
+# DATA BINDING QUESTIONS
+
+## 25. What is Data Binding?
+
+Connecting HTML and TypeScript data.
+
+---
+
+## 26. Types of Data Binding?
+
+1. Interpolation
+2. Property Binding
+3. Event Binding
+4. Two-way Binding
+
+---
+
+## 27. Example of Interpolation?
+
+```html
+{{title}}
+```
+
+---
+
+## 28. Example of Property Binding?
+
+```html
+<img [src]="image">
+```
+
+---
+
+## 29. Example of Event Binding?
+
+```html
+<button (click)="show()">
+```
+
+---
+
+## 30. Example of Two-way Binding?
+
+```html
+[(ngModel)]
+```
+
+---
+
+# DIRECTIVE QUESTIONS
+
+## 31. What is Directive?
+
+Instructions for DOM manipulation.
+
+---
+
+## 32. Types of Directives?
+
+1. Component Directive
+2. Structural Directive
+3. Attribute Directive
+
+---
+
+## 33. What is `*ngIf`?
+
+Conditional display.
+
+Example:
+
+```html
+<p *ngIf="true">Hello</p>
+```
+
+---
+
+## 34. What is `*ngFor`?
+
+Loop directive.
+
+Example:
+
+```html
+<li *ngFor="let x of items">
+```
+
+---
+
+# ROUTING QUESTIONS
+
+## 35. What is Routing?
+
+Navigation between components/pages.
+
+---
+
+## 36. Command to add routing?
+
+```bash
+ng new myapp --routing
+```
+
+---
+
+## 37. Which file contains routes?
+
+```text
+app.routes.ts
+```
+
+OR
+
+```text
+app-routing.module.ts
+```
+
+---
+
+# SERVICE QUESTIONS
+
+## 38. What is Service?
+
+Reusable business logic class.
+
+---
+
+## 39. Command to create service?
+
+```bash
+ng g s dataservice
+```
+
+---
+
+## 40. Why use services?
+
+* API calls
+* Shared data
+* Reusable logic
+
+---
+
+# FORMS QUESTIONS
+
+## 41. Types of forms in Angular?
+
+1. Template Driven
+2. Reactive Forms
+
+---
+
+## 42. What is ngModel?
+
+Two-way data binding directive.
+
+---
+
+# API QUESTIONS
+
+## 43. Which module used for API calls?
+
+```text
+HttpClientModule
+```
+
+---
+
+## 44. Method for GET request?
+
+```typescript
+this.http.get()
+```
+
+---
+
+## 45. Method for POST request?
+
+```typescript
+this.http.post()
+```
+
+---
+
+# CODE QUESTIONS
+
+## 46. Write interpolation example.
+
+```html
+<h1>{{name}}</h1>
+```
+
+---
+
+## 47. Write click event example.
+
+```html
+<button (click)="show()">Click</button>
+```
+
+---
+
+## 48. Write TypeScript function.
+
+```typescript
+show() {
+  alert("Hello");
+}
+```
+
+---
+
+## 49. Write ngFor example.
+
+```html
+<li *ngFor="let x of items">
+  {{x}}
+</li>
+```
+
+---
+
+## 50. Write ngIf example.
+
+```html
+<p *ngIf="status">Visible</p>
+```
+
+---
+
+# PRACTICAL QUESTIONS
+
+## 51. How to run Angular application?
+
+```bash
+ng serve
+```
+
+---
+
+## 52. How to open Angular app?
+
+```text
+http://localhost:4200
+```
+
+---
+
+## 53. How to stop Angular server?
+
+Press:
+
+```text
+CTRL + C
+```
+
+---
+
+## 54. How to install package?
+
+```bash
+npm install package-name
+```
+
+---
+
+## 55. How to create component without spec file?
+
+```bash
+ng g c home --skip-tests
+```
+
+---
+
+# ERROR QUESTIONS
+
+## 56. Error: ng not recognized
+
+### Fix:
+
+Restart terminal.
+
+OR
+
+Install Angular CLI again.
+
+---
+
+## 57. Port already in use
+
+### Fix:
+
+```bash
+ng serve --port 4300
+```
+
+---
+
+## 58. app-home is not known element
+
+### Fix:
+
+Import component properly.
+
+---
+
+# DIFFERENCE QUESTIONS
+
+## 59. Difference between AngularJS and Angular
+
+| AngularJS  | Angular    |
+| ---------- | ---------- |
+| JavaScript | TypeScript |
+| Old        | Modern     |
+| Slower     | Faster     |
+
+---
+
+## 60. Difference between Component and Module
+
+| Component | Module        |
+| --------- | ------------- |
+| UI Part   | Collection    |
+| HTML View | Organizes app |
+
+---
+
+## 61. Difference between GET and POST
+
+| GET            | POST      |
+| -------------- | --------- |
+| Read data      | Send data |
+| Visible in URL | Secure    |
+
+---
+
+# VERY IMPORTANT THEORY QUESTIONS
+
+## 62. Advantages of Angular
+
+* Reusable components
+* Fast
+* SPA
+* TypeScript support
+* Routing support
+
+---
+
+## 63. Disadvantages of Angular
+
+* Large framework
+* Hard for beginners
+
+---
+
+## 64. What is DOM?
+
+Document Object Model.
+
+---
+
+## 65. What is Virtual DOM?
+
+Virtual copy of real DOM.
+
+---
+
+## 66. What is npm?
+
+Node Package Manager.
+
+---
+
+## 67. What is dependency?
+
+External library/package required by project.
+
+---
+
+## 68. What is middleware?
+
+Software layer between request and response.
+
+---
+
+## 69. What is module?
+
+Container for components/services.
+
+---
+
+## 70. What is decorator?
+
+Special TypeScript function.
+
+Example:
+
+```typescript
+@Component
+```
+
+---
+
+# MOST ASKED LAB QUESTIONS
+
+1. Explain project structure.
+2. Explain component lifecycle.
+3. Difference between Angular and React.
+4. Explain interpolation.
+5. Explain directives.
+6. Explain routing.
+7. Explain services.
+8. Explain TypeScript.
+9. Explain SPA.
+10. Explain Angular CLI.
